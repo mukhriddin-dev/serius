@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/divider.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/typing.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="js/aos.js"></script>
+  <title>Serius.uz</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <script>
+    AOS.init();`
+
+
+  <script type="text/javascript" src="js/typ.js"></script>
+
+
+  <!-- <nav class="navbar navbar-expand-md navbar-mainbg fixed-top" style="padding-bottom: 0;">
+    <a class="navbar-brand navbar-logo" href="#">
+      <img src="media/steam1.png" alt="" style="height: 55px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <div class="hori-selector">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0);">
+            <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#ourwork">
+            <i class="far fa-address-book"></i>Address Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">
+            <i class="far fa-clone"></i>Components</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0);">
+            <i class="far fa-calendar-alt"></i>Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0);">
+            <i class="far fa-chart-bar"></i>Charts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0);">
+            <i class="far fa-copy"></i>Documents</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+
+  <script>
+    $(function () {
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 10) {
+          $('.navbar').addClass('active');
+        } else {
+          $('.navbar').removeClass('active');
+        }
+      });
+    });
+  </script>
+  <!-- <div class="container-fluid"> -->
+  <header class="header">
+    <nav class="navbar navbar-expand-md fixed-top">
+
+      <a href="#" class="navbar-brand text-uppercase font-weight-bold">
+        <img src="media/steam1.png" alt="" style="width: 60%; margin-left: 20px;">
+      </a>
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active mx-3"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span
+                class="sr-only">(current)</span></a></li>
+          <li class="nav-item mx-3"><a href="#services" class="nav-link text-uppercase font-weight-bold">Services</a></li>
+          <li class="nav-item mx-3"><a href="#ourwork" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
+          <li class="nav-item mx-3"><a href="#ourteam" class="nav-link text-uppercase font-weight-bold">Our team</a></li>
+          <li class="nav-item mx-3"><a href="#contact" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+
+
+
+
+
+
+  <!-- 
+  <script>
+    // ---------Responsive-navbar-active-animation-----------
+    function test() {
+      var tabsNewAnim = $('#navbarSupportedContent');
+      var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+      var activeItemNewAnim = tabsNewAnim.find('.active');
+      var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+      var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+      var itemPosNewAnimTop = activeItemNewAnim.position();
+      var itemPosNewAnimLeft = activeItemNewAnim.position();
+      $(".hori-selector").css({
+        "top": itemPosNewAnimTop.top + "px",
+        "left": itemPosNewAnimLeft.left + "px",
+        "height": activeWidthNewAnimHeight + "px",
+        "width": activeWidthNewAnimWidth + "px"
+      });
+      $("#navbarSupportedContent").on("click", "li", function (e) {
+        $('#navbarSupportedContent ul li').removeClass("active");
+        $(this).addClass('active');
+        var activeWidthNewAnimHeight = $(this).innerHeight();
+        var activeWidthNewAnimWidth = $(this).innerWidth();
+        var itemPosNewAnimTop = $(this).position();
+        var itemPosNewAnimLeft = $(this).position();
+        $(".hori-selector").css({
+          "top": itemPosNewAnimTop.top + "px",
+          "left": itemPosNewAnimLeft.left + "px",
+          "height": activeWidthNewAnimHeight + "px",
+          "width": activeWidthNewAnimWidth + "px"
+        });
+      });
+    }
+    $(document).ready(function () {
+      setTimeout(function () {
+        test();
+      });
+    });
+    $(window).on('resize', function () {
+      setTimeout(function () {
+        test();
+      }, 500);
+    });
+    $(".navbar-toggler").click(function () {
+      setTimeout(function () {
+        test();
+      });
+    });
+  </script>
+ -->
+
+
+
+
+
+  <div class="box">
+    <div class="image-overlay">
+      <div id="particles-js"></div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid">
+
+
+      <!-- cd-intro -->
+
+
+      <div class="ttt2" style="color: white; font-size: 40px; font-weight: 700;">
+        Serius TEAM
+        <!-- <span style="color: green; font-size: 50px">{</span> -->
+      </div>
+
+      <div class="mx-auto ttt" style="color: $boxColor; font-size: 2rem">
+        <section class="cd-intro">
+          <h1 class="cd-headline clip is-full-width">
+            <span></span><br>
+            <span class="cd-words-wrapper">
+              <b class="is-visible">WEB DEVELOPER</b>
+              <b>DESIGNER</b>
+              <b>SEO OPTIMISOR</b>
+              <b>Android Developer</b>
+              <b>iOS Developer</b>
+
+            </span>
+
+          </h1>
+
+        </section>
+        <!-- cd-intro -->
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 mt-5">
+        <h4>
+          Lorem ipsum dolor sit amet.
+        </h4>
+        <h1 style="font-size: 30px;">
+          About US
+        </h1>
+        <p style="font-size: 20px;">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit veniam deserunt placeat maxime
+          architecto expedita, id, libero praesentium voluptates ipsum assumenda possimus consequatur mollitia a vero
+          officia fugiat laborum quo. Repudiandae eligendi aspernatur veniam blanditiis voluptatibus totam nemo dolores.
+        </p>
+
+
+      </div>
+      <div data-aos="fade-left" class="col-md-6 mt-5 px-2 py-2">
+        <img src="media/bg.png" alt="" style="width: 100%;">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col-md-12 col-sm-12-col-xs-12">
+      <div class="section_heading text-center section_padding mt-5" id="services">
+        <h2>Our <span class="text2">Services</span></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum standard dummy
+          text.</p>
+        <div class="sm_border"></div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 col-sm-6 col-xs-12 pt-5">
+        <div data-aos="fade-right" class="single-service">
+          <i class="fa fa-wordpress"></i>
+          <h4>Web Development</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 pt-5">
+        <div data-aos="fade-down" class="single-service">
+          <i class="fa fa-sliders"></i>
+          <h4>UI/UX Branding</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 pt-5">
+        <div data-aos="fade-left" class="single-service">
+          <i class="fa fa-desktop"></i>
+          <h4>Web Brending</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 pt-5">
+        <div data-aos="fade-right" class="single-service">
+          <i class="fa fa-wordpress"></i>
+          <h4>Web Development</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 pt-5">
+        <div data-aos="fade-top" class="single-service">
+          <i class="fa fa-sliders"></i>
+          <h4>UI/UX Branding</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 pt-5">
+        <div data-aos="fade-left" class="single-service">
+          <i class="fa fa-desktop"></i>
+          <h4>Web Brending</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- portfolio START -->
+
+  <section class="portfolio pt-5">
+    <div class="container text-center pt-5">
+      <div class="section_heading text-center section_padding" id="ourwork">
+        <h2>Our <span class="text2">Recent Works</span></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum standard dummy
+          text.</p>
+        <div class="sm_border"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="portfolio-modal modal fade mt-5" id="portfoliomodal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="model-content text-center">
+        <div class="modal-body text-center">
+          <div class="container-fluid py-3">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <img src="media/banner2-bg.jpg" alt="" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- portfolio END  -->
+
+
+
+  <div class="portfolio-modal modal fade mt-5" id="openmodal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="model-content text-center">
+        <div class="modal-body text-center">
+          <div class="container-fluid py-3">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <img src="media/serius design.jpg" alt="" class="img-fluid rounded" style="width: 200%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="container control text-center">
+        <ul>
+          <li class="button filter-button" data-filter="all">All</li>
+          <li class="button filter-button" data-filter="Web_site">Web Site</li>
+          <li class="button filter-button" data-filter="Design">Design</li>
+          <li class="button filter-button" data-filter="Branding">Branding</li>
+        </ul>
+
+      </div>
+      <br />
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="gallery_product item col-lg-4 col-md-4 col-sm-6 filter Web_site">
+        <img src="media/counter.jpg" class="img-responsive img-fluid" style="width: 90%;">
+        <span>
+          <i class="fa fa-search-plus" data-toggle="modal" data-target="#openmodal">
+          </i>
+        </span>
+      </div>
+
+      <div class="gallery_product item col-lg-4 col-md-4 col-sm-6 filter Web_site">
+        <img src="media/counter.jpg" class="img-responsive img-fluid">
+        <span>
+          <i class="fa fa-search-plus" data-toggle="modal" data-target="#openmodal">
+          </i>
+        </span>
+      </div>
+
+      <div class="gallery_product item col-lg-4 col-md-4 col-sm-6 col-xs-6 filter Web_site">
+        <img src="media/counter.jpg" class="img-responsive img-fluid">
+        <span>
+          <i class="fa fa-plus" data-toggle="modal" data-target="#portfoliomodal"></i>
+        </span>
+      </div>
+
+      <div class="gallery_product item col-lg-4 col-md-4 col-sm-6 col-xs-6 filter Design">
+        <img src="media/counter.jpg" class="img-responsive img-fluid">
+        <span>
+          <i class="fa fa-plus" data-toggle="modal" data-target="#portfoliomodal"></i>
+        </span>
+      </div>
+      <div class="gallery_product item col-lg-4 col-md-4 col-sm-6 col-xs-6 filter Branding Design Web_site">
+        <img src="media/counter.jpg" class="img-responsive img-fluid">
+        <span>
+          <i class="fa fa-plus" data-toggle="modal" data-target="#portfoliomodal"></i>
+        </span>
+      </div>
+      <div class="gallery_product item col-lg-4 col-md-4 col-sm-6 col-xs-6 filter Branding Web_site">
+        <img src="media/counter.jpg" class="img-responsive img-fluid">
+        <span>
+          <i class="fa fa-plus" data-toggle="modal" data-target="#portfoliomodal"></i>
+        </span>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- <div class="price">
+
+  <p>
+    <strong>Food</strong> <br />
+    <select class="myactivity" name="activity['food'][]" multiple="multiple">            
+        <option value="5">Breakfast (US$ 5)</option>
+        <option value="10">Lunch (US$ 10)</option>
+        <option value="15">Dinner (US$ 15)</option>            
+    </select>        
+</p> 
+<p>
+    <strong>Entertainment</strong> <br />
+    <select class="myactivity" name="activity['entertainment']">
+        <option value="0">Please Select</option>
+        <option value="5">Swimming (US$ 5)</option>
+        <option value="10">Movie (US$ 10)</option>
+        <option value="15">Sight Seeing (US$ 15)</option>
+    </select>        
+</p>
+<p>
+    <strong>Amount (US$)</strong>: <input type="text" name="amount" id="amount" />
+</p>
+
+<script type="text/javascript">
+  $(document).ready(function() {        
+      $(".my-activity").click(function(event) {
+          var total = 0;
+          $(".my-activity:checked").each(function() {
+              total += parseInt($(this).val());
+          });
+          
+          if (total == 0) {
+              $('#amount').val('');
+          } else {                
+              $('#amount').val(total);
+          }
+      });
+  });    
+  </script>
+</div> -->
+
+
+
+
+  <!-- <h1>How to Auto Calculate Price in Javascript</h1>
+  <form name="frm-pin" method="post" action="pin-index-a.php">
+    <input type="hidden" name="mode" value="PinRequest" />
+    <label class="w3-text-green"><b>Number Of Pin</b></label>
+    <select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <form>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch1">
+          <label class="custom-control-label" for="switch1">Toggle me</label>
+        </div>
+      </form>
+
+    </select>
+    <label><b>Total Amount</b></label>
+    <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" readonly>
+    <script>
+      function calculateAmount(val) {
+        var tot_price = val * 100;
+        /*display the result*/
+        var divobj = document.getElementById('tot_amount');
+        divobj.value = tot_price;
+      }
+    </script> -->
+
+
+
+
+
+
+
+
+  <!-- Team -->
+
+
+
+
+  <section class="portfolio" style="padding-bottom: 0;">
+    <div class="container text-center pt-5">
+      <div class="section_heading text-center section_padding" id="ourteam">
+        <h2>Our <span class="text2">Team</span></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum standard dummy
+          text.</p>
+        <div class="sm_border"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid pb-5">
+    <div class="container">
+      <div class="row">
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="media/about.jpg" alt="card image"></p>
+                    <h4 class="card-title">John Doe edimi:)</h4>
+                    <p class="card-text">Web Designer ekanlar.</p>
+                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-sliders"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">John Doe okang</h4>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, a?</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-telegram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-google"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member -->
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="media/about.jpg" alt="card image"></p>
+                    <h4 class="card-title">John Doe edimi:)</h4>
+                    <p class="card-text">Web Designer ekanlar.</p>
+                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-sliders"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">John Doe okang</h4>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, a?</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-telegram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-google"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member -->
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip">
+            <div class="mainflip flip-0">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="media/about.jpg" alt="card image"></p>
+                    <h4 class="card-title">John Doe edimi:)</h4>
+                    <p class="card-text">Web Designer ekanlar.</p>
+                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-sliders"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">John Doe okang</h4>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, a?</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-telegram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                          <i class="fa fa-google"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member -->
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Team -->
+
+
+
+
+
+
+
+  <!-- contact -->
+
+
+  <section class="portfolio" style="padding-bottom: 0;">
+    <div class="container text-center pt-5">
+      <div class="section_heading text-center section_padding" id="contact">
+        <h2>Contact <span class="text2">us</span></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum standard dummy
+          text.</p>
+        <div class="sm_border"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="gray_bg section-padding">
+    <div class="contact-form">
+      <div class="container">
+        <div class="row contact-form-area">
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="footer-right-area wow fadeIn animated" style="visibility: visible;">
+              <h4>Contact Address</h4>
+              <div class="footer-right-contact">
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-map-marker"></i>
+                  </div>
+                  <p>San Francisco, CA</p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <p><a href="#">@Example@gmail.com</a></p>
+                  <p><a href="#">@Example@gmail.com</a></p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <p><a href="#">+ (00) 124 456 789</a></p>
+                  <p><a href="#">+ (00) 124 344 789</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact_form">
+              <form action="contact.php" method="post" id="main_contact_form">
+                <div class="contact_input_area">
+                  <div id="success_fail_info"></div>
+                  <div class="row">
+                    <!-- Form Group -->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Your Name"
+                          required="">
+                      </div>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail"
+                          required="">
+                      </div>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Subject">
+                      </div>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6"
+                          placeholder="Your Message *" required=""></textarea>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-secondary ct_btn">Send Message</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    $(document).ready(function () {
+
+      $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+
+        if (value == "all") {
+          //$('.filter').removeClass('hidden');
+          $('.filter').show('1000');
+        } else {
+          //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+          //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+          $(".filter").not('.' + value).hide('3000');
+          $('.filter').filter('.' + value).show('3000');
+
+        }
+      });
+
+      if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+      }
+      $(this).addClass("active");
+
+    });
+  </script>
+
+
+
+
+
+
+
+  <script src="js/filter.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
